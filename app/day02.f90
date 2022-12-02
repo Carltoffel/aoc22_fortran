@@ -4,7 +4,7 @@ program day02
 
     integer :: res
 
-    print "('Task 1')"
+    print "('Task 2')"
 
     res = total_score("input/day02/example1.txt")
     print "('Example 1: ', g0)", res

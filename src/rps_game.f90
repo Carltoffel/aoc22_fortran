@@ -47,7 +47,7 @@ contains
         integer :: player1, player2
 
         player1 = ichar(line(1:1)) - ichar('A') + 1
-        player2 = ichar(line(3:3)) - ichar('X') + 1
+        player2 = modulo(player1 + ichar(line(3:3)) - ichar('X') -2, 3) +1
 
         score = player2 + modulo(player2-player1+1, 3)*3
     end function eval_game
